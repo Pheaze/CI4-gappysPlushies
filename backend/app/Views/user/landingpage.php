@@ -14,9 +14,8 @@
     <div class="container mx-auto px-4 py-6 flex items-center justify-between">
       <h1 class="text-3xl font-bold text-pink-600">Gappy's Plushies</h1>
       <nav>
-        <a href="#shop" class="text-pink-500 hover:text-pink-700 px-4">Shop</a>
-        <a href="#about" class="text-pink-500 hover:text-pink-700 px-4">About</a>
-        <a href="#contact" class="text-pink-500 hover:text-pink-700 px-4">Contact</a>
+        <a href="/login" class="text-pink-500 hover:text-pink-700 px-4">Login</a>
+        <a href="/signUp" class="text-pink-500 hover:text-pink-700 px-4">Sign In</a>
       </nav>
     </div>
   </header>

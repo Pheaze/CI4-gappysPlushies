@@ -5,7 +5,7 @@ namespace App\Controllers;
 
 class Mood extends Controller
 {
-    public function index()
+    public function moodBoard()
     {
         // Data contract for moodboard view
         $data = [

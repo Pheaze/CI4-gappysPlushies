@@ -16,6 +16,8 @@
       <nav>
         <a href="/login" class="text-pink-500 hover:text-pink-700 px-4">Login</a>
         <a href="/signUp" class="text-pink-500 hover:text-pink-700 px-4">Sign In</a>
+        <a href="/mood" class="text-pink-500 hover:text-pink-700 px-4">Mooadboard</a>
+        <a href="/road" class="text-pink-500 hover:text-pink-700 px-4">Roadmap</a>
       </nav>
     </div>
   </header>

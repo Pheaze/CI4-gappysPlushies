@@ -8,7 +8,7 @@
     <img src="https://dendenotakushop.com/cdn/shop/files/KuripanPlushieMatikanetannhauserUmamusume-PrettyDerby_0.jpg?v=1724820492" alt="rawr" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">CI4-gappysPlushies</h3>
+  <h3 align="center">AD-gappysPlushies</h3>
 </div>
 
 <!-- * Description Section -->

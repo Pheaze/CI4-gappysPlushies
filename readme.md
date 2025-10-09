@@ -54,12 +54,10 @@ Soft and not Wet
 
 ## Overview
 
-This template provides a **minimal CodeIgniter 4 project layout** with conventions for file organization, commit practices, and simple modules.
+This project is for the website "Gappy's Plushies". A merchandise store that sells various amounts of plushies
 
-It is designed to be **easy to start with** and a **reference for adding new features**.
-
-* **Purpose**: a clean starting point for CI4 apps.
-* **Audience**: developers who want a predictable structure and quick onboarding.
+* **Purpose**: A fun website to browse and shop for plushies.
+* **Audience**: Hobbyists, kids, adults, or anyone whoe plans to give someone a gift.
 
 ### Key Components
 

@@ -10,17 +10,7 @@
 </head>
 <body class="bg-gradient-to-br from-pink-100 to-yellow-50 min-h-screen flex flex-col">
   <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="container mx-auto px-4 py-6 flex items-center justify-between">
-      <h1 class="text-3xl font-bold text-pink-600">Gappy's Plushies</h1>
-      <nav>
-        <a href="/login" class="text-pink-500 hover:text-pink-700 px-4">Login</a>
-        <a href="/signUp" class="text-pink-500 hover:text-pink-700 px-4">Sign In</a>
-        <a href="/mood" class="text-pink-500 hover:text-pink-700 px-4">Moodboard</a>
-        <a href="/road" class="text-pink-500 hover:text-pink-700 px-4">Roadmap</a>
-      </nav>
-    </div>
-  </header>
+  <?=view ('components/header')?>
 
   <!-- Hero Section -->
   <section class="flex-1 flex flex-col items-center justify-center text-center py-16" id="shop">
@@ -48,13 +38,10 @@
         ['name' => 'astolfo', 'img' => 'https://images.steamusercontent.com/ugc/1009311134773801268/E203DA9938236DBFAC6A286313092C352BA74A2F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true', 'desc' => 'Soft, squishy, and maybe a little haunted.'],
       ];
       foreach ($featured as $item): ?>
-        <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
-          <img src="<?= esc($item['img']) ?>" alt="<?= esc($item['name']) ?>" class="w-32 h-32 rounded-full mb-4 object-cover">
-          <h4 class="text-lg font-bold text-pink-700 mb-2"><?= esc($item['name']) ?></h4>
-          <p class="text-gray-600 mb-4"><?= esc($item['desc']) ?></p>
-          <!--<a href="miku.php" class="bg-yellow-400 text-pink-800 px-4 py-2 rounded hover:bg-yellow-300 font-semibold transition">View Plushy</a>-->
-        </div>
-      <?php endforeach; ?>
+      <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+        <?= view("components/cards/mikuCard", ['name' => $item['name'],'img' => $item['img'], 'desc' => $item['desc']]) ?>
+    </div>
+    <?php endforeach; ?>
     </div>
   </section>
 
@@ -69,10 +56,6 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white shadow-inner mt-auto">
-    <div class="container mx-auto px-4 py-6 text-center text-gray-500">
-      &copy; <?= date('Y') ?> Gappy's Plushies. All rights reserved.
-    </div>
-  </footer>
+  <?=view ('components/footer')?>
 </body>
 </html>

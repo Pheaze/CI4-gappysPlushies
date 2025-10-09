@@ -8,5 +8,5 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Users::index');
 $routes->get('/login', 'Users::login');
 $routes->get('/signUp', 'Users::signUp');
-$routes->get('/moodBoard', 'Users::moodBoard');
-$routes->get('/roadMap', 'Users::roadMap');
+$routes->get('/mood', 'Users::moodBoard');
+$routes->get('/road', 'Users::roadMap');

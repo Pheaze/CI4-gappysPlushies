@@ -18,9 +18,7 @@
        alt="Cute Plushies"
        class="mx-auto rounded-full shadow-lg w-40 h-40 mb-6 object-cover">
     <h2 class="text-4xl font-extrabold text-pink-700 mb-4">Snuggle Up With Gappy's Plushies!</h2>
-    <p class="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
-      Discover adorable, huggable plushies for every mood and moment. Handpicked for quality and cuteness!
-    </p>
+    <?=view ('components/tagline')?>
     <a href="/shop" class="bg-pink-500 text-white font-semibold px-8 py-3 rounded-full shadow hover:bg-pink-600 transition">
       Shop Now
     </a>

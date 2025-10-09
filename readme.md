@@ -5,7 +5,7 @@
 
 <div align="center">
   <a href="https://github.com/Pheaze/">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/rawr.jpg" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
   <h3 align="center">CI4-gappysPlushies</h3>

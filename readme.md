@@ -13,7 +13,7 @@
 
 <!-- * Description Section -->
 <div align="center">
-Creation of a landing page.
+Soft and not Wet
 </div>
 
 <br/>

@@ -67,9 +67,12 @@ These are **sample modules** included (or suggested) for learning how to add fea
 
 | Component                 | Purpose                                                             | Notes                                                   |
 | ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Auth (Sample)**         | Basic login/logout and role check (admin/user).                     | Uses CI4 sessions + MySQL `users` table.                |
-| **CRUD Module**           | Example entity (`Posts` or `Tasks`) with create/read/update/delete. | Demonstrates Controller → Service → Repository pattern. |
-| **Scheduler (Sample)**    | Simple to-do list with due dates.                                   | Shows how to extend with new tables and services.       |
+| **Buttons**               | Buttons of the website.                                             | Colorful.                                               |
+| **Cards**                 | Card designgs used in the website.                                  | Holds the products being sold.                          |
+| **Roadmap Assets**        | Assets used for the roadmap.                                        | Roadmap design.                                         |
+| **Tagline/CTA**           | Fragmented the tagline for easier calling.                          | Snuggle Up With Gappy's Plushies!.                      |
+| **Header**                | Header of the website and easier navigation.                        | Includes navigation to other parts of the website.      |
+| **Footer**                | Footer fragmented for easier calling.                               | Footer of the website.                                  |
 
  <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
 

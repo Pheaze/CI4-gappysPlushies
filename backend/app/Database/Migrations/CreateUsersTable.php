@@ -47,12 +47,6 @@ class CreateUsersTable extends Migration
         'default'    => 1, // 1 = active, 0 = inactive
         'null'       => false,
     ],
-    'email_activated' => [
-        'type'       => 'TINYINT',
-        'constraint' => 1,
-        'default'    => 0,
-        'null'       => false,
-    ],
     'gender' => [
         'type'       => 'VARCHAR',
         'constraint' => 20,
@@ -84,6 +78,6 @@ class CreateUsersTable extends Migration
 
     public function down()
     {
-         $this->forge->dropTable('table_name_here', true);
+         $this->forge->dropTable('user', true);
     }
 }

@@ -164,7 +164,7 @@
 
 ## Activity time
 Create the following, with their own issues, branches and PR
-- [ ] Dashboard Admin
+- [ ] Dashboard Adminadmin
     - [ ] Under `Controller` create `adminPage` function
     - [ ] Under `Controller` create `servicePage` function (Rename this to the specific naming your using ex.: `Menu`, `Product` etc.)
     - [ ] Under `Controller` create `requestPage` function (Rename this to the specific naming your using ex.: `Menu`, `Order` etc.)

@@ -10,3 +10,4 @@ $routes->get('/login', 'Users::login');
 $routes->get('/signUp', 'Users::signUp');
 $routes->get('/mood', 'Users::moodBoard');
 $routes->get('/road', 'Users::roadMap');
+$routes->get('/dash', 'Admin::Dashboard');

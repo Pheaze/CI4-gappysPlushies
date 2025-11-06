@@ -1,69 +1,113 @@
 <?php
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Moodboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="moodboard.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+    <?=view ('components/header')?>
+    <div class="max-w-3xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6 text-center">Moodboard</h1>
 
-namespace App\Controllers;
+        <!-- Color Palettes -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold mb-4">Color Palettes</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Palette 1 -->
+                <div class="flex flex-col items-center"></div>
+                    <div class="flex space-x-5 mb-5">
+                        <div class="w-8 h-8 rounded bg-pink-400"></div>
+                        <div class="w-8 h-8 rounded bg-yellow-300"></div>
+                        <div class="w-8 h-8 rounded bg-black"></div>
+                    </div>
+                </div>
+        </section>
 
+        <!-- Font Styles -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold mb-4">Font Styles</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="flex flex-col items-center">
+                    <span class="font-sans text-lg">Aa Bb Cc</span>
+                    <span class="text-xs text-gray-500">Sans (Tailwind default)</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="font-serif text-lg">Aa Bb Cc</span>
+                    <span class="text-xs text-gray-500">Serif</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="font-mono text-lg">Aa Bb Cc</span>
+                    <span class="text-xs text-gray-500">Monospace</span>
+                </div>
+            </div>
+        </section>
 
-class Mood extends Controller
-{
-    public function index()
-    {
-        // Data contract for moodboard view
-        $data = [
-            // Color palettes (hex codes matching landing page background)
-            'palettes' => [
-                [
-                    'name' => 'Soft Plush',
-                    'colors' => ['#F9FAFB', '#F3E8FF', '#A7F3D0', '#FDE68A'],
-                ],
-                [
-                    'name' => 'Pastel Dream',
-                    'colors' => ['#FEE2E2', '#C7D2FE', '#FBCFE8', '#BBF7D0'],
-                ],
-                [
-                    'name' => 'Warm Hug',
-                    'colors' => ['#FDE68A', '#FCA5A5', '#FDBA74', '#F3F4F6'],
-                ],
-            ],
-            // Example card (product sample)
-            'card' => [
-                'title' => 'Gappy Plushie',
-                'image' => '/images/gappy-plushie.png',
-                'price' => '₱499',
-                'description' => 'Handmade, ultra-soft plushie perfect for cuddles and gifts.',
-            ],
-            // Buttons (3 styles)
-            'buttons' => [
-                [
-                    'label' => 'Shop Now',
-                    'class' => 'bg-purple-400 text-white rounded px-4 py-2 hover:bg-purple-500',
-                ],
-                [
-                    'label' => 'Learn More',
-                    'class' => 'bg-yellow-300 text-gray-800 rounded px-4 py-2 hover:bg-yellow-400',
-                ],
-                [
-                    'label' => 'Contact Us',
-                    'class' => 'bg-pink-300 text-white rounded px-4 py-2 hover:bg-pink-400',
-                ],
-            ],
-            // Fonts (Google Fonts links)
-            'fonts' => [
-                [
-                    'name' => 'Quicksand',
-                    'link' => 'https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap',
-                ],
-                [
-                    'name' => 'Montserrat',
-                    'link' => 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap',
-                ],
-            ],
-            // Logo shapes (SVG markup)
-            'logos' => [
-                'square' => '<svg width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#F3E8FF"/><text x="50%" y="55%" text-anchor="middle" font-size="28" fill="#A7F3D0" font-family="Quicksand, sans-serif">GP</text></svg>',
-                'circle' => '<svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#FBCFE8"/><text x="50%" y="55%" text-anchor="middle" font-size="28" fill="#FCA5A5" font-family="Montserrat, sans-serif">GP</text></svg>',
-            ],
-        ];
+        <!-- Log Section -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold mb-4">Logos</h2>
+            <div class="flex space-x-8 justify-center">
+                <!-- Circle Log -->
+                <div class="flex flex-col items-center gap-4">
+    <!-- Rounded Logo -->
+    <div class="p-2 bg-white shadow rounded-full">
+        <img 
+            src="<?= esc($src ?? 'https://dendenotakushop.com/cdn/shop/files/KuripanPlushieMatikanetannhauserUmamusume-PrettyDerby_0.jpg?v=1724820492') ?>" 
+            alt="<?= esc($alt ?? 'Logo (rounded)') ?>" 
+            class="w-32 h-32 object-cover rounded-full border-4 border-pink-300"
+        >
+    </div>
+    <!-- Square Logo -->
+    <div class="p-2 bg-white shadow rounded">
+        <img 
+            src="<?= esc($src ?? 'https://dendenotakushop.com/cdn/shop/files/KuripanPlushieMatikanetannhauserUmamusume-PrettyDerby_0.jpg?v=1724820492') ?>" 
+            alt="<?= esc($alt ?? 'Logo (square)') ?>" 
+            class="w-32 h-32 object-cover rounded-none border-4 border-pink-300"
+        >
+    </div>
+</div>
+            </div>
+        </section>
+        <!-- Button Examples -->
+        <section class="mt-10">
+            <h2 class="text-xl font-semibold mb-4">Button Examples</h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+            <!-- Primary Button -->
+            <?= view('components/buttons/primary') ?>
+            <!-- Secondary Button -->
+            <?= view('components/buttons/secondary')?>
+            <!-- Success Button -->
+            <?= view('components/buttons/tertiary')?> 
+            <!-- Danger Button -->
+            <?= view('components/buttons/fourth')?>
+            </div>
+        </section>
+        <!-- Card Example -->
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Sample Card</h2>
+            <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+            <?= view("components/cards/mikuCard", ['name' => 'miku', 'img' => 'https://preview.redd.it/someone-please-tell-me-the-name-or-brand-of-these-dumb-baby-v0-mdyzk434thyc1.jpeg?width=640&crop=smart&auto=webp&s=ff622154f2ed8a079928df3eb97e7b187996df3b', 'desc' => 'Miku Dayo Miku Dayo Miku Dayo.']) ?>
+            </div>
+        </section>
 
-        return view('moodboard', $data);
-    }
-}
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Sample Card 2</h2>
+            <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+            <?= view("components/cards/tetoCard", ['name' => 'kasane teto', 'img' => 'https://ae01.alicdn.com/kf/Se391c4a6ec514b95aede38073aeacae68.jpg', 'desc' => 'Teto Word of the day.']) ?>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Sample Card 3</h2>
+            <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+            <?= view("components/cards/neruCard", ['name' => 'Akita Neru', 'img' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVU53oRERtxQu2dBFtnVWL7vJrbIESjQZAxw&s', 'desc' => 'Third Baka']) ?>
+            </div>
+        </section>
+            </div>
+    </div>
+    <footer><?=view ('components/footer')?></footer>
+</body>
+</html>

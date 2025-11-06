@@ -5,15 +5,15 @@
 
 <div align="center">
   <a href="https://github.com/Pheaze/">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="https://dendenotakushop.com/cdn/shop/files/KuripanPlushieMatikanetannhauserUmamusume-PrettyDerby_0.jpg?v=1724820492" alt="rawr" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">CI4-gappysPlushies</h3>
+  <h3 align="center">AD-gappysPlushies</h3>
 </div>
 
 <!-- * Description Section -->
 <div align="center">
-Creation of a landing page.
+Soft and not Wet
 </div>
 
 <br/>
@@ -54,12 +54,10 @@ Creation of a landing page.
 
 ## Overview
 
-This template provides a **minimal CodeIgniter 4 project layout** with conventions for file organization, commit practices, and simple modules.
+This project is for the website "Gappy's Plushies". A merchandise store that sells various amounts of plushies
 
-It is designed to be **easy to start with** and a **reference for adding new features**.
-
-* **Purpose**: a clean starting point for CI4 apps.
-* **Audience**: developers who want a predictable structure and quick onboarding.
+* **Purpose**: A fun website to browse and shop for plushies.
+* **Audience**: Hobbyists, kids, adults, or anyone whoe plans to give someone a gift.
 
 ### Key Components
 
@@ -67,9 +65,12 @@ These are **sample modules** included (or suggested) for learning how to add fea
 
 | Component                 | Purpose                                                             | Notes                                                   |
 | ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Auth (Sample)**         | Basic login/logout and role check (admin/user).                     | Uses CI4 sessions + MySQL `users` table.                |
-| **CRUD Module**           | Example entity (`Posts` or `Tasks`) with create/read/update/delete. | Demonstrates Controller → Service → Repository pattern. |
-| **Scheduler (Sample)**    | Simple to-do list with due dates.                                   | Shows how to extend with new tables and services.       |
+| **Buttons**               | Buttons of the website.                                             | Colorful.                                               |
+| **Cards**                 | Card designgs used in the website.                                  | Holds the products being sold.                          |
+| **Roadmap Assets**        | Assets used for the roadmap.                                        | Roadmap design.                                         |
+| **Tagline/CTA**           | Fragmented the tagline for easier calling.                          | Snuggle Up With Gappy's Plushies!.                      |
+| **Header**                | Header of the website and easier navigation.                        | Includes navigation to other parts of the website.      |
+| **Footer**                | Footer fragmented for easier calling.                               | Footer of the website.                                  |
 
  <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
 
@@ -88,11 +89,6 @@ These are **sample modules** included (or suggested) for learning how to add fea
 ![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge\&logo=codeigniter\&logoColor=white)
 
 #### Databases
-
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
 
 <!-- ! Keep only the used technology -->
 
@@ -222,6 +218,5 @@ AD-ProjectName/
 | YouTube “UI/UX Design”  | Video tutorials on modern web interface layouts and patterns.         | [https://www.youtube.com](https://www.youtube.com)                         |
 | Pinterest Design Boards | Inspiration for color schemes, typography, and component layouts.     | [https://www.pinterest.com](https://www.pinterest.com)                     |
 | Google Photos (Assets)  | Stock imagery and graphics used in UI mockups and documentation.      | [https://photos.google.com](https://photos.google.com)                     |
-| System Documentation    | Internal docs from PHP, MongoDB, and PostgreSQL used in development.  | — (see `/docs` folder in repo)                                             |
 
 <!-- ! Add what tools aided you -->

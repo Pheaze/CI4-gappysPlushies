@@ -19,11 +19,15 @@
             background: linear-gradient(135deg, #f9fafb 0%, #fce7f3 100%);
         }
     </style>
+
 </head>
-<body class="min-h-screen flex flex-col justify-center items-center font-sans">
+<body>
+<?=view ('components/header')?>
+
+<div class="min-h-screen flex flex-col justify-center items-center font-sans">
     <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8 border border-pink-200">
         <div class="flex flex-col items-center mb-6">
-            <img src="/assets/logo.png" alt="Gappy's Plushies" class="h-16 mb-2">
+            <img src="https://dendenotakushop.com/cdn/shop/files/KuripanPlushieMatikanetannhauserUmamusume-PrettyDerby_0.jpg?v=1724820492" alt="Cute Plushies" class="mx-auto rounded-full shadow-lg w-40 h-40 mb-6 object-cover">
             <h1 class="text-2xl font-bold text-pink-600 mb-1">Welcome Back!</h1>
             <p class="text-sm text-gray-500">Sign in to your plushie account</p>
         </div>
@@ -49,13 +53,14 @@
             </button>
         </form>
         <div class="mt-6 text-center">
-            <a href="<?= site_url('register') ?>" class="text-pink-500 hover:underline text-sm">
+            <a href="/signUp" class="text-pink-500 hover:underline text-sm">
                 Don't have an account? Register
             </a>
         </div>
     </div>
-    <footer class="mt-8 text-gray-400 text-xs">
-        &copy; <?= date('Y') ?> Gappy's Plushies. All rights reserved.
-    </footer>
+    
+</div>
+<footer ><?= view('components/footer')?> </footer>
+</div>
 </body>
-</html></body>
+</html>

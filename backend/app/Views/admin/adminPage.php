@@ -11,11 +11,7 @@
 
 <div class="min-h-screen bg-gray-50">
     <!-- Dashboard Header -->
-    <header class="bg-pink-600 shadow-lg py-4"></header>
-        <div class="container mx-auto px-4"></div>
-            <h1 class="text-2xl font-bold text-white">Gappy's Plushies Admin</h1>
-        </div>
-    </header>
+    <?=view ('components/adminHeader')?>
 
     <!-- Admin Navigation -->
     <nav class="bg-white shadow-md">

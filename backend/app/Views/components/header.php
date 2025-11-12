@@ -7,6 +7,7 @@
         <a href="/signUp" class="text-pink-500 hover:text-pink-700 px-4">Sign In</a>
         <a href="/mood" class="text-pink-500 hover:text-pink-700 px-4">Moodboard</a>
         <a href="/road" class="text-pink-500 hover:text-pink-700 px-4">Roadmap</a>
+        <a href="/prod" class="text-pink-500 hover:text-pink-700 px-4">Products</a>
       </nav>
     </div>
   </header>

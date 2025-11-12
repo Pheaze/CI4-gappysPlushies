@@ -142,9 +142,7 @@ $products = $products ?? [
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Gappy's Plushies Admin</div>
-    </header>
+   <?=view ('components/adminHeader')?>
     <main>
         <h1>Manage Products</h1>
         <div class="actions">

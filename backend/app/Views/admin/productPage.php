@@ -4,19 +4,19 @@ $products = $products ?? [
     [
         'id' => 1,
         'name' => 'miku',
-        'image' => 'https://i.imgur.com/tTWqGXO.png',
+        'image' => 'https://preview.redd.it/someone-please-tell-me-the-name-or-brand-of-these-dumb-baby-v0-mdyzk434thyc1.jpeg?width=640&crop=smart&auto=webp&s=ff622154f2ed8a079928df3eb97e7b187996df3b',
         'description' => 'Miku Dayo Miku Dayo Miku Dayo.'
     ],
     [
         'id' => 2,
         'name' => 'kasane teto',
-        'image' => 'https://i.imgur.com/4KlxbGQ.png',
+        'image' => 'https://ae01.alicdn.com/kf/Se391c4a6ec514b95aede38073aeacae68.jpg',
         'description' => 'Teto Word of the day.'
     ],
     [
         'id' => 3,
         'name' => 'astolfo',
-        'image' => 'https://i.imgur.com/0x5cH3T.png',
+        'image' => 'https://images.steamusercontent.com/ugc/1009311134773801268/E203DA9938236DBFAC6A286313092C352BA74A2F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
         'description' => 'Soft, squishy, and maybe a little haunted.'
     ],
 ];

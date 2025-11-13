@@ -34,7 +34,17 @@
                 <?= esc($error) ?>
             </div>
         <?php endif; ?>
-        <form method="post" action="<?= site_url('login') ?>" class="space-y-5">
+        <form method="post" action="<?= site_url('signUp') ?>" class="space-y-5">
+        <div>
+                <label for="first_name" class="block text-sm font-medium text-pink-700">First Name</label>
+                <input type="first_name" id="first_name" name="first_name" required
+                    class="mt-1 block w-full rounded-lg border-pink-300 focus:border-pink-500 focus:ring-pink-500 bg-pink-50 text-gray-700 px-4 py-2" />
+            </div>
+            <div>
+                <label for="last_name" class="block text-sm font-medium text-pink-700">Last Name</label>
+                <input type="last_name" id="last_name" name="last_name" required
+                    class="mt-1 block w-full rounded-lg border-pink-300 focus:border-pink-500 focus:ring-pink-500 bg-pink-50 text-gray-700 px-4 py-2" />
+            </div>
           <div>
                 <label for="user" class="block text-sm font-medium text-pink-700">Username</label>
                 <input type="user" id="user" name="user" required
@@ -52,12 +62,12 @@
             </div>
             <div>
                 <label for="confirm" class="block text-sm font-medium text-pink-700">Confirm Password</label>
-                <input type="confirm" id="confirm" name="confirm" required
+                <input type="password" id="confirm" name="confirm" required
                     class="mt-1 block w-full rounded-lg border-pink-300 focus:border-pink-500 focus:ring-pink-500 bg-pink-50 text-gray-700 px-4 py-2" />
             </div>
             <button type="submit"
                 class="w-full py-2 px-4 rounded-lg bg-pink-500 hover:bg-pink-600 text-white font-semibold shadow transition">
-                Login
+                Sign In
             </button>
         </form>
         <div class="mt-6 text-center">
@@ -66,7 +76,7 @@
             </a>
         </div>
     </div>
-    
+
 </div>
 <footer ><?= view('components/footer')?> </footer>
 </body>

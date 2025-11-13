@@ -13,3 +13,7 @@ $routes->get('/road', 'Users::roadMap');
 $routes->get('/dash', 'Admin::Dashboard');
 $routes->get('/order', 'Admin::Orders');
 $routes->get('/prod', 'Admin::products');
+
+$routes->post('login', 'Auth::login');
+$routes->get('logout', 'Auth::logout');
+$routes->post('signUp', 'Auth::signUp');

@@ -47,17 +47,6 @@ class CreateUsersTable extends Migration
         'default'    => 1, // 1 = active, 0 = inactive
         'null'       => false,
     ],
-    'gender' => [
-        'type'       => 'VARCHAR',
-        'constraint' => 20,
-        'null'       => true,
-    ],
-    // You use Var Char for images directory
-    'profile_pic' => [
-        'type'       => 'VARCHAR',
-        'constraint' => 255,
-        'null'       => true,
-    ],
     'deleted_at' => [
         'type' => 'DATETIME',
         'null' => true,

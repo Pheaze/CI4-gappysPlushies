@@ -17,11 +17,9 @@ class UserSeeder extends Seeder
                     'first_name' => 'Lebron Raymone',
                     'last_name' => 'James',
                     'email' => 'theKing23@gmail.com',
-                    'password_hash' => 'TheGoat#23',
-                    'type' => 'user',
+                    'password_hash' => $password,
+                    'type' => 'admin',
                     'account_status' => 'active',
-                    'gender' => 'Male',
-                    'profile_pic' => 'Yes King',
                     'created_at' => $now,
                     'updated_at' => $now,
                 ]

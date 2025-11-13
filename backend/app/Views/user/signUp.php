@@ -21,6 +21,9 @@
     </style>
 </head>
 <body>
+    <?php
+    $errors = $errors ?? [];
+    $old = $old ?? [];?>
 <?=view ('components/header')?>
 <div class="min-h-screen flex flex-col justify-center items-center font-sans">
     <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8 border border-pink-200">
@@ -34,7 +37,7 @@
                 <?= esc($error) ?>
             </div>
         <?php endif; ?>
-        <form method="post" action="<?= site_url('signUp') ?>" class="space-y-5">
+        <form method="post" action="<?= site_url('signUp') ?>" class="space-y-5" novalidate>
         <div>
                 <label for="first_name" class="block text-sm font-medium text-pink-700">First Name</label>
                 <input type="first_name" id="first_name" name="first_name" required

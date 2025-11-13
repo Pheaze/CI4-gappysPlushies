@@ -142,7 +142,7 @@ $products = $products ?? [
     </style>
 </head>
 <body>
-   <?=view ('components/adminHeader')?>
+   <?=view ('components/header')?>
     <main>
         <h1>Manage Products</h1>
         <div class="actions">

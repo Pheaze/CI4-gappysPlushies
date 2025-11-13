@@ -11,7 +11,7 @@
 
 <div class="min-h-screen bg-gray-50">
     <!-- Dashboard Header -->
-    <?=view ('components/adminHeader')?>
+    <?=view ('components/header')?>
 
     <!-- Admin Navigation -->
     <nav class="bg-white shadow-md">
@@ -19,16 +19,16 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Navigation Links -->
                 <div class="flex items-center space-x-4"></div>
-                    <a href="<?= site_url('admin/dashboard') ?>" class="text-pink-600 hover:text-pink-800 px-3 py-2 rounded-md font-medium">
+                    <a href="<?= site_url('/dash') ?>" class="text-pink-600 hover:text-pink-800 px-3 py-2 rounded-md font-medium">
                         Dashboard
                     </a>
-                    <a href="<?= site_url('admin/products') ?>" class="text-gray-600 hover:text-pink-600 px-3 py-2 rounded-md font-medium">
+                    <a href="<?= site_url('/prod') ?>" class="text-gray-600 hover:text-pink-600 px-3 py-2 rounded-md font-medium">
                         Products
                     </a>
-                    <a href="<?= site_url('admin/orders') ?>" class="text-gray-600 hover:text-pink-600 px-3 py-2 rounded-md font-medium">
+                    <a href="<?= site_url('/order') ?>" class="text-gray-600 hover:text-pink-600 px-3 py-2 rounded-md font-medium">
                         Orders
                     </a>
-                    <a href="<?= site_url('admin/customers') ?>" class="text-gray-600 hover:text-pink-600 px-3 py-2 rounded-md font-medium">
+                    <a href="<?= site_url('/customers') ?>" class="text-gray-600 hover:text-pink-600 px-3 py-2 rounded-md font-medium">
                         Customers
                     </a>
                 </div>

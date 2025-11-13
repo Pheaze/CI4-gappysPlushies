@@ -6,7 +6,7 @@
     <title>Admin Orders Page</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.3/tailwind.min.css" rel="stylesheet">
 </head>
-<?=view ('components/adminHeader')?>
+<?=view ('components/header')?>
 <body class="bg-[#F8BBD0] min-h-screen">
     <div class="container mx-auto py-8">
         <h1 class="text-3xl font-bold text-white mb-6">Orders Management</h1>

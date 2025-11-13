@@ -1,9 +1,3 @@
-<!-- app/Views/user/login.php -->
-<!-- 
-    Login page styled to match the landing page vibe and color palette.
-    Uses Tailwind via CDNJS. 
-    Data contract: expects $error (string|null) for error message.
--->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +16,8 @@
 
 </head>
 <body>
+    <?php $errors = $errors ?? [];
+    $old = $old ?? []; ?>
 <?=view ('components/header')?>
 
 <div class="min-h-screen flex flex-col justify-center items-center font-sans">
@@ -36,7 +32,7 @@
                 <?= esc($error) ?>
             </div>
         <?php endif; ?>
-        <form method="post" action="<?= site_url('login') ?>" class="space-y-5">
+        <form method="post" action="<?= site_url('login') ?>" class="space-y-5" novalidate>
             <div>
                 <label for="email" class="block text-sm font-medium text-pink-700">Email</label>
                 <input type="email" id="email" name="email" required
